@@ -4,6 +4,9 @@ A tool that encodes and decodes text using a password in .txt files.
 <h1>Setup</h1>
 Make sure the python is installed on your system (Windows/Linux/MacOS).<br>
 
+# Working Idea
+This project is working on Base64.
+
 <h1>Tested Systems</h1>
 The tool is currently tested on : <br>
 1. Windows (10)<br>
