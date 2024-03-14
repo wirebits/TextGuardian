@@ -17,8 +17,8 @@ There are 5 parameters after command ```python``` (windows) or ```python3``` (Li
 1. TextGuardian.py - The tool file.<br>
 2. **-e** - Encode the input.<br>
 3. **-d** - Decode the input.<br>
-4. **-p** - The password set on the text/text file.<br>
-5. **-p "Text"/.txt** - The string / .txt file want to encode / decode.<br>
+4. **-p password** - The password set on the text/text file.<br>
+5. **-i "Text"/.txt** - The string / .txt file want to encode / decode.<br>
 6. **-o output_file.txt** - The encoded / decoded text is store in that .txt file.<br>
 While using string, put your text inside "".<br>
 For example, if you want to encode ```Hello``` then, ```"Hello"```.<br>
