@@ -47,4 +47,4 @@ if __name__ == "__main__":
     with open(args.output_file, "w") as file:
         file.write(result)
 
-    print(f"Text has been written to {args.output_file}.")
+    print(f"Text has been written to {args.output_file}!")
