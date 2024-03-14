@@ -15,10 +15,11 @@ The testing is going on different systems.
 # Parameters
 There are 5 parameters after command ```python``` (windows) or ```python3``` (Linux) : <br>
 1. TextGuardian.py - The tool file.<br>
-2. <b>e</b> / <b>d</b> - <b>e</b> for Encode and <b>d</b> for Decode.<br>
-3. key - The password set on the text.<br>
-4. "Text" / test.txt - The string / .txt file want to encode / decode.<br>
-5. output_file.txt - The encoded / decoded text is store in that .txt file.<br>
+2. **-e** - Encode the input.<br>
+3. **-d** - Decode the input.<br>
+4. **-p** - The password set on the text/text file.<br>
+5. **-p "Text"/.txt** - The string / .txt file want to encode / decode.<br>
+6. **-o output_file.txt** - The encoded / decoded text is store in that .txt file.<br>
 While using string, put your text inside "".<br>
 For example, if you want to encode ```Hello``` then, ```"Hello"```.<br>
 Give any name you want to that output_file.<br>
@@ -35,24 +36,24 @@ Give any name you want to that output_file.<br>
 ## Encode the text<br>
 
 ```
-python TextGuardian.py e key "Text" encrypted_text.txt
+python TextGuardian.py -e -p password -i "Text" -o encrypted_text.txt
 ```
 ## Decode the text<br>
 
 ```
-python TextGuardian.py d key encrypted_text.txt decrypted_text.txt
+python TextGuardian.py -d -p password -i encrypted_text.txt -o decrypted_text.txt
 ```
 6. To use with .txt files : <br>
 The original_text.txt is that file which contain original text whant to encode.<br>
 ## Encode the text<br>
 
 ```
-python TextGuardian.py e key original_text.txt encrypted_text.txt
+python TextGuardian.py -e -p password -i original_text.txt -o encrypted_text.txt
 ```
 ## Decode the text<br>
 
 ```
-python TextGuardian.py d key encrypted_text.txt decrypted_text.txt
+python TextGuardian.py -d -p password -i encrypted_text.txt -o decrypted_text.txt
 ```
 
 <h1>Key Features</h1>
