@@ -1,3 +1,5 @@
+![TextGuardian](https://github.com/user-attachments/assets/3cfd56aa-3f37-43aa-b5bf-9367ed379437)
+
 # TextGuardian
 A simple tool that encodes and decodes text using a password in .txt files.
 
