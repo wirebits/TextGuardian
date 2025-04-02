@@ -1,62 +1,54 @@
 # TextGuardian
-A tool that encodes and decodes text using a password in .txt files.
+A simple tool that encodes and decodes text using a password in .txt files.
 
-<h1>Setup</h1>
-Make sure the python is installed on your system (Windows/Linux/MacOS).<br>
+# Key Features
+- It can encode and decode text.
+- It can work with text and `.txt` files.
+- It lock/unlock the text with a password.
 
-# Working Idea
-This project is working on Base64.
-
-<h1>Tested Systems</h1>
-The tool is currently tested on : <br>
-1. Windows (10)<br>
-The testing is going on different systems.
+# Setup
+- Make sure that the latest python is installed on your system (Windows/Linux/MacOS).
 
 # Parameters
-There are 5 parameters after command ```python``` (windows) or ```python3``` (Linux) : <br>
-1. TextGuardian.py - The tool file.<br>
-2. **-e** - Encode the input.<br>
-3. **-d** - Decode the input.<br>
-4. **-p password** - The password set on the text/text file.<br>
-5. **-i "Text"/.txt** - The string / .txt file want to encode / decode.<br>
-6. **-o output_file.txt** - The encoded / decoded text is store in that .txt file.<br>
-While using string, put your text inside "".<br>
-For example, if you want to encode ```Hello``` then, ```"Hello"```.<br>
-Give any name you want to that output_file.<br>
+| Parameter | Usage                                    |
+|-----------|------------------------------------------|
+| -e        | Set the tool to encode the input.        |
+| -d        | Set the tool to decode the input.        |
+| -p        | Password of text or `.txt` files.        |
+| -i        | Text or `.txt` file to encode or decode. |
+| -o        | The `.txt` file that stores output.      |
+| -h        | Show help message and exit from tool.    |
 
-<h1>Install and Run</h1>
-1. Download or Clone the Repository.<br>
-2. Open the folder.<br>
-3. Open CMD/Powershell (Windows) or Terminal (Linux) in that folder.<br>
-4. It can use by giving input in two ways : <br>
+# Note
+- While using text as input, put your text inside `""`.
+- Give any name you want to the output `.txt` file.
 
-```String``` and ```.txt``` files.
+# Install
+1. Download or Clone the Repository.
+2. Open the folder.
+3. Open CMD/Powershell (Windows) or Terminal (Linux/MacOS) in that folder.
 
-5. To use with string : <br>
-## Encode the text<br>
-
-```
-python TextGuardian.py -e -p password -i "Text" -o encrypted_text.txt
-```
-## Decode the text<br>
+# Run
+- It supports both text and `.txt` files.
+## With Text
+### Encode the text
 
 ```
-python TextGuardian.py -d -p password -i encrypted_text.txt -o decrypted_text.txt
+python TextGuardian.py -e -p <PASSWORD> -i "Text" -o <ENCRYPTED-OUTPUT-FILE>.txt
 ```
-6. To use with .txt files : <br>
-The original_text.txt is that file which contain original text whant to encode.<br>
-## Encode the text<br>
+### Decode the text
 
 ```
-python TextGuardian.py -e -p password -i original_text.txt -o encrypted_text.txt
+python TextGuardian.py -d -p <PASSWORD> -i <ENCRYPTED-OUTPUT-FILE>.txt -o <DECRYPTED-OUTPUT-FILE>.txt
 ```
-## Decode the text<br>
+## With `.txt` file
+### Encode the `.txt` file
 
 ```
-python TextGuardian.py -d -p password -i encrypted_text.txt -o decrypted_text.txt
+python TextGuardian.py -e -p <PASSWORD> -i <ORIGINAL-TXT-FILE>.txt -o <ENCRYPTED-OUTPUT-TXT-FILE>.txt
 ```
+### Decode the `.txt` file
 
-<h1>Key Features</h1>
-<b>1. It can encode and decode text.</b><br>
-<b>2. It can work with string and .txt files.</b><br>
-<b>3. It lock/unlock the text with a password.<br>
+```
+python TextGuardian.py -d -p <PASSWORD> -i <ENCRYPTED-OUTPUT-TXT-FILE>.txt -o <DECRYPTED-OUTPUT-TXT-FILE>.txt
+```
